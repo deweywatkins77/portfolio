@@ -40,7 +40,7 @@ header {
   margin: -8px -8px 0px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   background-image: url("./images/background-header.jpg");
   background-size: cover;
 }
