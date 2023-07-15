@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from './Navigation'
 
 const Header = () =>{
 
@@ -6,19 +7,12 @@ const Header = () =>{
         <div>
             <header>
                 <section className="profile">
-                <img src='../images/profilesmall.jpg' alt="dewey watkins profile"/>
+                <img src="/images/profilesmall.jpg" alt="dewey watkins profile"/>
                 <h1>
                     Dewey<br />Watkins
                 </h1>
                 </section>
-                <nav>
-                    <ul>
-                        <li><a href="#AboutMe">About Me</a></li>
-                        <li><a href="#MyProjects">My Projects</a></li>
-                        <li><a href="#ContactMe">Contact Me</a></li>
-                        <li><a href="https://github.com/deweywatkins77/resume">Resume</a></li>
-                    </ul>
-                </nav>
+                <Navigation />
             </header>
         </div>
     )
