@@ -6,7 +6,7 @@ const Header = () =>{
         <div>
             <header>
                 <section className="profile">
-                <img src='./images/profilesmall.jpg' alt="dewey watkin profile"/>
+                <img src='../images/profilesmall.jpg' alt="dewey watkins profile"/>
                 <h1>
                     Dewey<br />Watkins
                 </h1>
