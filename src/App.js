@@ -14,10 +14,9 @@ function App() {
         <Header />
         <Routes>
         <Route path='/portfolio' element={<Home />} />
-          <Route path='/portfolio/aboutme' element={<Home />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contactme' element={<ContactMe />}/>
-          <Route path='/resume' element = {<Resume />}/>
+          <Route path='/portfolio/projects' element={<Projects />} />
+          <Route path='/portfolio/contactme' element={<ContactMe />}/>
+          <Route path='/portfolio/resume' element = {<Resume />}/>
         </Routes>
       </div>
     </Router>
