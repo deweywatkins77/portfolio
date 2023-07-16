@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.99d92c10.css",
-    "main.js": "/portfolio/static/js/main.fd0ba449.js",
+    "main.css": "/portfolio/static/css/main.71fcc59d.css",
+    "main.js": "/portfolio/static/js/main.8b271325.js",
     "static/media/invmanagement.png": "/portfolio/static/media/invmanagement.0409233416dfef2b3370.png",
     "static/media/donatetrader.png": "/portfolio/static/media/donatetrader.c0cd5b4682cc0aca7ee7.png",
     "static/media/blog.png": "/portfolio/static/media/blog.7987c8e0a4b91f6bbd97.png",
@@ -11,11 +11,11 @@
     "static/media/cameraflip.jpg": "/portfolio/static/media/cameraflip.e9d762b7637527c610b0.jpg",
     "static/media/profilesmall.jpg": "/portfolio/static/media/profilesmall.7155aad165cb4d7aeb8b.jpg",
     "index.html": "/portfolio/index.html",
-    "main.99d92c10.css.map": "/portfolio/static/css/main.99d92c10.css.map",
-    "main.fd0ba449.js.map": "/portfolio/static/js/main.fd0ba449.js.map"
+    "main.71fcc59d.css.map": "/portfolio/static/css/main.71fcc59d.css.map",
+    "main.8b271325.js.map": "/portfolio/static/js/main.8b271325.js.map"
   },
   "entrypoints": [
-    "static/css/main.99d92c10.css",
-    "static/js/main.fd0ba449.js"
+    "static/css/main.71fcc59d.css",
+    "static/js/main.8b271325.js"
   ]
 }
