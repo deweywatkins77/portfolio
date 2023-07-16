@@ -8,7 +8,7 @@ const Navigation = () =>{
         <div>
             <nav>
                 <ul>
-                    <li><Link to="/">About Me</Link></li>
+                    <li><Link to="/portfolio">About Me</Link></li>
                     <li><Link to="/projects">My Projects</Link></li>
                     <li><Link to="/contactme">Contact Me</Link></li>
                     <li><Link to="/resume">Resume</Link></li>
