@@ -34,7 +34,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(196, 233, 238);
+  background-color:rgb(223, 248, 252);
 }
 
 /* create menu layout to including image and name on the left */
@@ -320,6 +320,15 @@ footer a:link{
     font-size: 16px;
     width:100%;
     margin: 0px;
+  }
+
+  .cardText p, .cardText a:link, .cardText a:visited {
+    margin-left: 0px;
+    padding-left: 0px;
+    color: var(--card-color-text);
+    z-index: 1;
+    text-align: left;
+    font-size: 14px;
   }
 
   .resumeHeader{
