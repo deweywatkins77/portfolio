@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe'
+import Resume from './pages/Resume'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contactme' element={<ContactMe />}/>
+          <Route path='/resume' element = {<Resume />}/>
         </Routes>
       </div>
     </Router>
