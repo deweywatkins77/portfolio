@@ -317,8 +317,8 @@ footer a:link{
 
   nav a:link, nav a:visited{
     padding: 0px;
-    font-size: 18px;
-    width:95%;
+    font-size: 16px;
+    width:100%;
     margin: 0px;
   }
 
