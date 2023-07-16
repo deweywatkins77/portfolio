@@ -322,13 +322,39 @@ footer a:link{
     margin: 0px;
   }
 
-  .cardText p, .cardText a:link, .cardText a:visited {
+  .projectcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 200px;
+    width: 46%;
+    background-size: cover;
+    
+    border:1px solid var(--card-border);
+    opacity: 1; 
+    transition: opacity 0.1s ease-in-out;
+    position: relative;
+  }
+  
+  .cardTextSmall{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .projectcard .cardTextSmall p, .projectcard .cardTextSmall a:link, .projectcard .cardTextSmall a:visited {
     margin-left: 0px;
     padding-left: 0px;
     color: var(--card-color-text);
     z-index: 1;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .resumeHeader{

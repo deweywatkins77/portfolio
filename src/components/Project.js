@@ -18,7 +18,7 @@ const Project = (props) => {
       onMouseLeave={handleMouseLeave}
       onClick={() => window.open(props.link.link)}
     >
-      {isHovered && (
+      {isHovered && window.innerWidth > 828 && (
         <div className="cardText">
             <div style={{display:"flex", justifyContent:"flex-start"}}>
                 <p>{props.link.name}</p>
@@ -26,6 +26,17 @@ const Project = (props) => {
             <a href={props.link.link}>Deployed App</a>
             <br />
             <a href={props.link.github}>GitHub Repository</a>
+        </div>
+      )}
+
+      {window.innerWidth <= 828 && (
+        <div className="cardTextSmall">
+          <div style={{display:"flex", justifyContent:"flex-start"}}>
+              <p>{props.link.name}</p>
+          </div>
+          <a href={props.link.link}>Deployed App</a>
+          <br />
+          <a href={props.link.github}>GitHub Repository</a>
         </div>
       )}
     </section>
