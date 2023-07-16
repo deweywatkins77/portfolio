@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from './Navigation'
-
+import profileImage from '../images/profilesmall.jpg';
 const Header = () =>{
 
     return (
         <div>
             <header>
                 <section className="profile">
-                <img src="../images/profilesmall.jpg" alt="dewey watkins profile"/>
+                <img src={profileImage} alt="dewey watkins profile"/>
                 <h1>
                     Dewey<br />Watkins
                 </h1>
