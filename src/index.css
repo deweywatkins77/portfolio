@@ -22,7 +22,7 @@
   --main-p-fontsize: 20px;
   --main-p-fontcolor: rgb(11, 12, 56);
   --main-seperate-border: rgb(69, 148, 221); /* rgb(1,146,229);*/
-  --card-color-text: grey;
+  --card-color-text: lightblue;
   --card-text-bg: rgb(69, 148, 221);
   --card-border: rgb(11, 12, 56);
 }
@@ -139,21 +139,47 @@ css for images after this section
   width: 46%;
   background-size: cover;
   border:1px solid var(--card-border);
+  opacity: 1; 
+  transition: opacity 0.1s ease-in-out;
+  position: relative;
 }
 
-.cardtext {
-  display: block;
-  border: none;
-  margin: 10px 3%;
-  padding: 5px 15px;
-  width: auto;
-  color: var(--card-text-color);
-  background-color: var(--card-text-bg);
+.projectcard::before {
+  /* Create a pseudo-element as a background overlay */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+  opacity: 0; /* Initial opacity */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.projectcard:hover::before {
+  /* Change the opacity of the pseudo-element on hover */
+  opacity: 1;
+}
+
+.cardText{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.cardText p, .cardText a:link, .cardText a:visited {
+  margin-left: 0px;
+  padding-left: 0px;
+  color: var(--card-color-text);
+  z-index: 1;
+  text-align: left;
 }
 
 /* Set background image information for project cards and links */
-.img-portfolio{
-  background-image: url('./images/portfolio.jpg'); 
+.img-donatetrader{
+  background-image: url('./images/donatetrader.png'); 
 }
 
 .img-invManagement{
@@ -168,8 +194,12 @@ css for images after this section
   background-image: url('./images/glowsmall.jpg'); 
 }
 
-.img-primes{
-  background-image: url('./images/python.jfif'); 
+.img-blog{
+  background-image: url('./images/blog.png'); 
+}
+
+.img-planner{
+  background-image: url('./images/planner.png'); 
 }
 
 .contactForm input{
