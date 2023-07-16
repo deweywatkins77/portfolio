@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Project = (props) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,6 +11,21 @@ const Project = (props) => {
     setIsHovered(false);
   };
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section
       className={`projectcard ${props.link.class}`}
@@ -18,7 +33,7 @@ const Project = (props) => {
       onMouseLeave={handleMouseLeave}
       onClick={() => window.open(props.link.link)}
     >
-      {isHovered && window.innerWidth > 828 && (
+      {isHovered && windowWidth > 828 && (
         <div className="cardText">
             <div style={{display:"flex", justifyContent:"flex-start"}}>
                 <p>{props.link.name}</p>
@@ -29,7 +44,7 @@ const Project = (props) => {
         </div>
       )}
 
-      {window.innerWidth <= 828 && (
+      {windowWidth <= 828 && (
         <div className="cardTextSmall">
           <div style={{display:"flex", justifyContent:"flex-start"}}>
               <p>{props.link.name}</p>

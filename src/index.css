@@ -343,6 +343,7 @@ footer a:link{
   .cardTextSmall{
     margin-left: 0px;
     margin-bottom: 0px;
+    width:100%;
     z-index: 1;
     position: relative;
     background-color: rgba(0, 0, 0, 0.4);
