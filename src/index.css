@@ -15,6 +15,10 @@
   --main-h2-fontfam2: helvetica;
   --main-h2-fontsize: 32px;
   --main-h2-fontcolor: rgb(11, 12, 56);
+  --main-h3-fontfam1: arial;
+  --main-h3-fontfam2: helvetica;
+  --main-h3-fontsize: 32px;
+  --main-h3-fontcolor: rgb(11, 12, 56);
   --main-p-fontsize: 20px;
   --main-p-fontcolor: rgb(11, 12, 56);
   --main-seperate-border: rgb(69, 148, 221); /* rgb(1,146,229);*/
@@ -30,6 +34,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(196, 233, 238);
 }
 
 /* create menu layout to including image and name on the left */
@@ -74,7 +79,7 @@ a:link, a:visited {
 header ul li:active {
   box-shadow: 1px 1px 0px 0px var(--nav-shadow-active);
 }
-/* Align the profile pick with profile name text */
+/* Align the profile pic with profile name text */
 .profile {
   display: flex;
   align-items: flex-end;
@@ -86,31 +91,25 @@ sections divided by blue border
 main {
   width: 100%;
   display: flex;
-  flex-direction: column;
-
 }
 
 main section {
+  width: 100%;
   display: flex;
-  margin: 20px 25px;
+  flex-direction: column;
+  margin:30px 12% 0px;
 }
 
 main section h2 {
-  width: 25%;
-  height: auto;
-  margin: auto;
   font-family: var(--main-h2-fontfam1) , var(--main-h2-fontfam2);
   font-size: var(--main-h2-fontsize);
   color: var(--main-h2-fontcolor);
 }
 
 main section p, main section ul {
-  width: 75%;
-  padding-left: 25px;
   list-style: none;
   display: flex;
   justify-content: space-around;
-  border-left: 3px solid var(--main-seperate-border);
   font-size: var(--main-p-fontsize);
   color: var(--main-p-fontcolor);
 }
@@ -121,11 +120,11 @@ css for images after this section
 */
 .cardcontainer {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 0px;
-  width: 75%;
-  border-left: 3px solid var(--main-seperate-border);
+  margin: 0px;
+  width: 100%;
 }
 
 .projectcard {
@@ -133,30 +132,19 @@ css for images after this section
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  opacity: .5;
-  margin: 10px 0px 0px 25px;
-  height: 150px;
-  width: 45.5%;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 200px;
+  width: 46%;
   background-size: cover;
   border:1px solid var(--card-border);
-
-}
-
-.projectcard:hover{
-  transition: all .7s ease-in-out;
-  opacity: 1;
-} 
-
-.big {
-  margin: 0px 0px 0px 25px;
-  height: 300px;
-  width: 100%;
 }
 
 .cardtext {
   display: block;
   border: none;
-  margin: 10px 10px;
+  margin: 10px 3%;
   padding: 5px 15px;
   width: auto;
   color: var(--card-text-color);
@@ -184,154 +172,170 @@ css for images after this section
   background-image: url('./images/python.jfif'); 
 }
 
-@media only screen and (max-width: 910px){
-  a:link, a:visited {
-      text-decoration: none;
-      color: var(--nav-menu-text);
-      font-size: 24px;
-  }
-  
-  header ul {
-      width: 40%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-end;
-      margin: 0px 20px 0px 0px;
-      padding: 0px;
-  }
-
-  header ul li {
-      margin: 10px auto;
-      width: 125px;
-      text-align: center;
-      padding: 0px 0px 0px 10px;
-  }
-
-  main {
-      width: 100%;
-      margin-top: 20px;
-      align-items: center;
-  }
-
-  main section {
-      display: flex;
-      flex-direction: column;
-      margin: 20px auto;
-      width: 100%
-  }
-
-  main section h2 {
-      width: 100%;
-      padding: 0px;
-      text-align: center;
-  }
-
-  main section p, main section ul {
-      width: 100%;
-      border-top: 3px solid var(--main-seperate-border);
-      border-left: none;
-      padding-left: 0px;
-      padding-top: 15px;
-      margin: 15px auto;
-  }
-
-  .cardcontainer {
-      width: 100%;
-      margin: 18px 0px 0px 0px;
-      padding: 0px;
-      border-top: 3px solid var(--main-seperate-border);
-      border-left: none;
-  }
-
-  .projectcard {
-      width: 100%;
-      margin: 10px auto;
-      padding: 0px;
-  }
-
-  .big {
-      margin: 15px auto 0px;
-      height: 300px;
-      width: 100%;
-
-  }
+.contactForm input{
+  width:40%;
 }
 
-@media only screen and (max-device-width: 480px){
+.contactForm textarea{
+  width:40%;
+  height: 100px;
+}
+
+.resumeHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin:0px;
+  padding:0px;
+  margin-left: 12%;
+}
+
+.resumeHeader h2{
+  margin-bottom: 0px;
+  width: auto;
+}
+
+.resumeHeader a{
+  font-size: 14px;
+  margin-left: 3%;
+  margin-bottom: 5px;
+}
+
+.resumeContainer{
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.resumePart{
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  padding-right: 1%;
+}
+
+.resumePart h3{
+  color: var(--main-h3-fontcolor);
+  text-align: center;
+}
+
+.resumePart ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.resumePart li{
+  padding-bottom: 10px;
+}
+
+footer{
+  margin: 0px 12%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer a:link{
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 827px){
   a:link, a:visited {
       text-decoration: none;
       color: var(--nav-menu-text);
       font-size: 24px;
   }
+
+  header nav{
+    width: 29%;
+  }
   
   header ul {
-      width: 40%;
-      height: 100%;
+      width: 95%;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
-      margin: 0px 20px 0px 0px;
+      margin: 0px 10% 0px 0px;
       padding: 0px;
   }
 
-  header ul li {
-      margin: 10px auto;
-      width: 150px;
-      text-align: center;
-      padding: 0px 0px 0px 10px;
+  nav ul li {
+    margin: 5px 10px 5px 0px;
+    width: 85%;
+    text-align: center;
+    padding: 0px 0px 0px 10px;
+    font-size: 10px;
   }
 
-  main {
-      width: 100%;
-      margin-top: 20px;
-      align-items: center;
+  nav a:link, nav a:visited{
+    padding: 0px;
+    font-size: 18px;
+    width:95%;
+    margin: 0px;
   }
 
-  main section {
-      display: flex;
-      flex-direction: column;
-      margin: 20px auto;
-      width: 100%
+  .resumeHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin:0px;
+    padding:0px;
+    margin-left: 12%;
   }
-
-  main section h2 {
-      width: 100%;
-      padding: 0px;
-      text-align: center;
+  
+  .resumeHeader h2{
+    margin-bottom: 0px;
+    width: auto;
   }
-
-  main section p, main section ul {
-      width: 100%;
-      border-top: 3px solid var(--main-seperate-border);
-      border-left: none;
-      padding-left: 0px;
-      padding-top: 15px;
-      margin: 15px auto;
+  
+  .resumeHeader a{
+    font-size: 14px;
+    margin-left: 3%;
+    margin-bottom: 5px;
   }
-
-  .cardcontainer {
-      width: 100%;
-      margin: 18px 0px 0px 0px;
-      padding: 0px;
-      border-top: 3px solid var(--main-seperate-border);
-      border-left: none;
+  
+  .resumeContainer{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
-
-  .projectcard {
-      width: 100%;
-      margin: 10px auto;
-      padding: 0px;
+  
+  .resumePart{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding-right: 1%;
   }
-
-  .big {
-      margin: 15px auto 0px;
-      height: 300px;
-      width: 100%;
-
+  
+  .resumePart h3{
+    color: var(--main-h3-fontcolor);
+    text-align: center;
   }
+  
+  .resumePart ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .resumePart li{
+    padding-bottom: 10px;
+  }
+  
 }
 
 code {

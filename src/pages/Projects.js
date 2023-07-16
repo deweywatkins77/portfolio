@@ -30,14 +30,14 @@ const Projects = () =>{
         }
     ]
     return(
-        <div>
+        <section>
             <h2 id="MyProjects">My Projects</h2>
             <section className="cardcontainer">
                 {links.map((element, index)=>{
                     return <Project key={index} link={element} />
                 })}
             </section>
-        </div>
+        </section>
     )
 }
 

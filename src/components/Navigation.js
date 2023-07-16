@@ -5,7 +5,6 @@ import {Link} from "react-router-dom"
 const Navigation = () =>{
 
     return (
-        <div>
             <nav>
                 <ul>
                     <li><Link to="/portfolio">About Me</Link></li>
@@ -14,7 +13,6 @@ const Navigation = () =>{
                     <li><Link to="/portfolio/resume">Resume</Link></li>
                 </ul>
             </nav>
-        </div>
     )
 
 }

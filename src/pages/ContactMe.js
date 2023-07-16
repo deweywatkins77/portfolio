@@ -3,9 +3,9 @@ import React from "react";
 
 const ContactMe = () =>{
     return(
-        <div>
+        <section>
             <h2>Contact Me</h2>
-            <form>
+            <form className="contactForm">
                 <label>Name:</label><br/>
                 <input type="text" placeholder="Name"></input>
                 <br /><br />
@@ -14,10 +14,10 @@ const ContactMe = () =>{
                 <br /><br />
                 <label>Message:</label><br />
                 <textarea placeholder="message"></textarea>
-                <br /><br />
+                <p> </p>
                 <button type="submit">Submit</button>
             </form>
-        </div>
+        </section>
     )
 }
 
