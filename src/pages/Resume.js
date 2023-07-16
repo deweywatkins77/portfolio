@@ -5,7 +5,7 @@ const Resume = () =>{
         <section>
             <div className="resumeHeader">
                 <h2>Resume</h2>
-                <a href="https://raw.githubusercontent.com/deweywatkins77/resume/main/Resume.pdf">Download Resume</a>
+                <a href="https://raw.githubusercontent.com/deweywatkins77/resume/main/Resume.pdf">Download</a>
             </div>
             <div className="resumeContainer">
                 <div className="resumePart">

@@ -279,6 +279,14 @@ footer a:link{
 }
 
 @media only screen and (max-width: 827px){
+  header h1 {
+    padding-left: 10px;
+    color: var(--nav-profile-text);
+    font-family: var(--nav-profile-fam1), var(--nav-profile-fam2);
+    font-size: 30px;
+    margin-bottom: -1px;
+  }
+
   a:link, a:visited {
       text-decoration: none;
       color: var(--nav-menu-text);
@@ -301,10 +309,10 @@ footer a:link{
 
   nav ul li {
     margin: 5px 10px 5px 0px;
-    width: 85%;
+    width: 95%;
     text-align: center;
     padding: 0px 0px 0px 10px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   nav a:link, nav a:visited{
@@ -329,7 +337,7 @@ footer a:link{
   }
   
   .resumeHeader a{
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 3%;
     margin-bottom: 5px;
   }
@@ -347,11 +355,13 @@ footer a:link{
     flex-direction: column;
     width: 32%;
     padding-right: 1%;
+    padding-left: 1%;
   }
   
   .resumePart h3{
     color: var(--main-h3-fontcolor);
-    text-align: center;
+    text-align: left;
+    font-size: 12px;
   }
   
   .resumePart ul{
@@ -364,6 +374,8 @@ footer a:link{
   
   .resumePart li{
     padding-bottom: 10px;
+    font-size: 10px;
+    text-align: left;
   }
   
 }
