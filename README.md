@@ -28,7 +28,9 @@ npm i
 ```
 
 ## Usage
+Click the nav links in the upper right corner to view their corresponding pages
 
+[Depolyed Site](https://github.com/deweywatkins77/)
 
 
 ## License
