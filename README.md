@@ -32,7 +32,7 @@ Click the nav links in the upper right corner to view their corresponding pages
 
 [Depolyed Site](https://deweywatkins77.github.io/portfolio)
 
-
+![Dewey Watkins Development Portfolio](public/images/portfolio.png)
 
 
 ## License
